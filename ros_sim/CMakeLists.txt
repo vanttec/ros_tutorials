@@ -32,7 +32,6 @@ set(turtlesim_node_HDRS
 
 qt5_wrap_cpp(turtlesim_node_MOCS ${turtlesim_node_HDRS})
 
-
 add_executable(turtlesim_node ${turtlesim_node_SRCS} ${turtlesim_node_MOCS})
 target_link_libraries(turtlesim_node Qt5::Widgets ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(turtlesim_node ros_sim_gencpp)
